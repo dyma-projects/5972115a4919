@@ -1,3 +1,15 @@
-<p>
-  directive works!
+<input [(ngModel)]="nom"/>
+<p>{{nom}}</p>
+
+<button type="button" (click)="changeStatus($event)">Clique moi !</button>
+
+<p *ngIf='status'>
+    p1
 </p>
+<p *ngIf='!status'>
+    p2
+</p>
+
+<ul>
+    <li *ngFor='let text of texts'>{{text}}</li>
+</ul>
